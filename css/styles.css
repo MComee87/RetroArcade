@@ -1,0 +1,32 @@
+
+body {
+  padding-top: 50px;
+  background-color: #333;
+  color: #fff;
+}
+
+.title-box {
+	background-color: #111;
+    border-color: #000;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 112px;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 3px #fff;
+}
+
+.retro-purple {
+    color: #5d2eab;
+}
+
+.arcade-green {
+	color: #35b568;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
