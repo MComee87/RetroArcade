@@ -4,28 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Asteroids-retroArcade</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script type="text/javascript" src="../js/jquery-3.1.1.slim.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <title>Galaga-RetroArcade</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script type="text/javascript" src="../../js/jquery-3.1.1.slim.min.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
     
     <script src="jquery-1.4.1.min.js"></script>
     <script src="vector_battle_regular.typeface.js"></script>
     <script src="ipad.js"></script>
     <script src="game.js"></script>
-    <style>
-      #canvas { border:1px solid black; top:0px; left:0px; }
-      .button { position:absolute; border:1px solid black; }
-      #left-controls { position:absolute; left:1px; bottom:0px; display:none; }
-      #right-controls { position:absolute; right:1px; bottom:0px; display:none; }
-      #up { width:200px; height:100px; bottom:100px;}
-      #left { width:100px; height:100px; bottom:0px;}
-      #right { width:100px; height:100px; bottom:0px; left:100px; }
-      #space { width:200px; height:200px; bottom:0px; right:0px; }
-      canvas { margin-right:auto; margin-left:auto; }
-    </style>
-
+    
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
@@ -47,7 +38,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="../index.html">Home</a></li>
+            <li class="active"><a href="../../index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -77,20 +68,19 @@
       </div>
       <div class="row">
       <div class="col-md-12">
-        <h2 class="catagories sci-fi-yellow">Astroids</h2>
+        <h2 class="catagories sci-fi-yellow">Galaga</h2>
       </div>
       </div>
 
-    <div id="game-container">
-      <canvas id="canvas" width="780" height="540"></canvas>
-      <div id="left-controls">
-        <div id="up" class='button'>THRUST</div>
-        <div id="left" class='button'>LEFT</div>
-        <div id="right" class='button'>RIGHT</div>
-      </div>
-      <div id="right-controls">
-        <div id="space" class='button'>FIRE</div>
-      </div>
+    <div class="row">
+        <div class="center">
+            <img class="center" src="images/galaga-logo.png" alt="GALAGA" sizes="20vw"
+                 srcset="images/galaga-logo-100.png 100w,images/galaga-logo-160.png 160w">
+        </div>
+    </div>
+    <div class="row">
+        <div id="gameboard" class="center">
+        </div>
     </div>
  
       </section>
@@ -100,6 +90,31 @@
         </div>
     </footer>
     </div>
+
+<script src="js/libs/firebase.js"></script>
+<script src="js/libs/state-machine.js"></script>
+<script src="js/point.js"></script>
+<script src="js/entity.js"></script>
+<script src="js/missiles.js"></script>
+<script src="js/resources.js"></script>
+<script src="js/player.js"></script>
+<script src="js/enemy.js"></script>
+<script src="js/greenEnemy.js"></script>
+<script src="js/enemyManager.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/game.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-69237002-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 
   </body>
 </html>
