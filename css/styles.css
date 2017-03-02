@@ -9,6 +9,11 @@ footer {
 	background-color: #222;
 }
 
+p {
+	font-family: 'Nova Mono', monospace;
+	font-size: 38px;
+}
+
 .title-box {
 	background-color: #111;
     border-color: #000;
@@ -19,16 +24,24 @@ footer {
     padding-bottom: 20px;
     padding-top: 20px;
     font-size: 112px;
-    font-family: 'VT323', monospace;
-    text-shadow: 2px 2px 3px #fff;
 }
 
 .retro-purple {
     color: #5d2eab;
+    font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 3px #fff;
 }
 
 .arcade-green {
 	color: #35b568;
+	font-family: 'VT323', monospace;
+    text-shadow: 2px 2px 3px #fff;
+}
+
+.sci-fi-yellow {
+	color: #ffc821;
+	font-family: 'Audiowide', cursive;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 .starter-template {
